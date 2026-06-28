@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
     <title>Amazon Gifts</title>
     <style>
         * {
@@ -18,7 +18,6 @@
             padding-bottom: 80px;
         }
 
-        /* Header */
         .header {
             display: flex;
             align-items: center;
@@ -57,7 +56,6 @@
             fill: #555;
         }
 
-        /* Banner */
         .banner {
             background: linear-gradient(135deg, #232f3e, #1a2633);
             color: white;
@@ -67,7 +65,7 @@
             display: flex;
             flex-direction: column;
             gap: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         .banner h2 {
@@ -81,7 +79,7 @@
             line-height: 1.4;
         }
 
-        .banner .claim-btn {
+        .claim-btn {
             background: #FF9900;
             color: #111;
             border: none;
@@ -99,12 +97,11 @@
             display: block;
         }
 
-        .banner .claim-btn:active {
+        .claim-btn:active {
             transform: scale(0.97);
             background: #e68a00;
         }
 
-        /* Section Headers */
         .section-header {
             font-size: 18px;
             font-weight: 600;
@@ -124,7 +121,6 @@
             border-radius: 20px;
         }
 
-        /* Gift Grid */
         .gift-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -135,7 +131,7 @@
             background: white;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
             transition: 0.2s;
             display: flex;
             flex-direction: column;
@@ -196,20 +192,6 @@
             overflow: hidden;
         }
 
-        .gift-price {
-            font-size: 16px;
-            font-weight: 700;
-            color: #B12704;
-        }
-
-        .gift-price small {
-            font-weight: 400;
-            font-size: 12px;
-            color: #565959;
-            text-decoration: line-through;
-            margin-left: 6px;
-        }
-
         .claim-gift-btn {
             background: #FFD814;
             border: none;
@@ -232,7 +214,6 @@
             transform: scale(0.97);
         }
 
-        /* Featured / Single row special */
         .featured-card {
             background: white;
             border-radius: 16px;
@@ -242,7 +223,7 @@
             align-items: center;
             border: 1px solid #eaeaea;
             margin-bottom: 14px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
         }
 
         .featured-card .gift-img {
@@ -274,7 +255,6 @@
             width: fit-content;
         }
 
-        /* Bottom disclaimer */
         .disclaimer {
             margin-top: 32px;
             text-align: center;
@@ -289,7 +269,6 @@
             text-decoration: none;
         }
 
-        /* Responsive */
         @media (min-width: 480px) {
             .gift-grid {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -307,7 +286,6 @@
             }
         }
 
-        /* no login/signup tabs */
         .no-tabs {
             display: none;
         }
@@ -325,144 +303,127 @@
 
     <!-- Main Banner -->
     <div class="banner">
-        <h2>🎁 Today's Top Deals</h2>
-        <p>Claim exclusive Amazon gifts & discounts — limited time only!</p>
+        <h2>🎁 Today's Top Gifts</h2>
+        <p>Claim exclusive Amazon gifts — limited time only!</p>
         <a href="claim.html" class="claim-btn">🔥 Claim Your Gift Now</a>
     </div>
 
-    <!-- Category: Best Sellers -->
+    <!-- Best Sellers -->
     <div class="section-header">
         ⭐ Best Sellers
         <span class="badge">Hot</span>
     </div>
 
     <div class="gift-grid">
-        <!-- Gift 1 -->
         <div class="gift-card">
             <div class="gift-img">
                 <span class="gift-tag">#1 Best Seller</span>
-                <img src="https://m.media-amazon.com/images/I/61XfDvQLsUL._AC_UL320_.jpg" alt="Wireless Earbuds" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/61XfDvQLsUL._AC_UL320_.jpg" alt="Wireless Earbuds" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Wireless Bluetooth Earbuds with Noise Cancellation</div>
-                <div class="gift-price">₹1,299 <small>₹2,999</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 2 -->
         <div class="gift-card">
             <div class="gift-img">
                 <span class="gift-tag">Trending</span>
-                <img src="https://m.media-amazon.com/images/I/71z0uG1SXpL._AC_UL320_.jpg" alt="Smart Watch" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/71z0uG1SXpL._AC_UL320_.jpg" alt="Smart Watch" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Smart Fitness Band with Heart Rate Monitor</div>
-                <div class="gift-price">₹2,499 <small>₹5,999</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 3 -->
         <div class="gift-card">
             <div class="gift-img">
                 <span class="gift-tag">Limited</span>
-                <img src="https://m.media-amazon.com/images/I/61r0s9bH-hL._AC_UL320_.jpg" alt="Bluetooth Speaker" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/61r0s9bH-hL._AC_UL320_.jpg" alt="Bluetooth Speaker" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Portable Bluetooth Speaker, 20W Bass</div>
-                <div class="gift-price">₹1,799 <small>₹3,499</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 4 -->
         <div class="gift-card">
             <div class="gift-img">
                 <span class="gift-tag">Deal</span>
-                <img src="https://m.media-amazon.com/images/I/61Cgh5PbdDL._AC_UL320_.jpg" alt="Coffee Mug Set" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/61Cgh5PbdDL._AC_UL320_.jpg" alt="Coffee Mug Set" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Ceramic Coffee Mug Set (6 pieces)</div>
-                <div class="gift-price">₹699 <small>₹1,499</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
     </div>
 
-    <!-- Featured Pick (horizontal) -->
+    <!-- Featured Pick -->
     <div class="section-header" style="margin-top: 28px;">
         🌟 Featured Pick
     </div>
 
     <div class="featured-card">
         <div class="gift-img">
-            <img src="https://m.media-amazon.com/images/I/61VhPZJx1HL._AC_UL320_.jpg" alt="Power Bank" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61VhPZJx1HL._AC_UL320_.jpg" alt="Power Bank" loading="lazy" />
         </div>
         <div class="gift-info">
             <div class="gift-name">20000mAh Power Bank Fast Charging</div>
-            <div class="gift-price">₹1,999 <small>₹4,499</small></div>
-            <a href="claim.html" class="claim-gift-btn">Claim Now</a>
+            <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
         </div>
     </div>
 
-    <!-- Category: New Arrivals -->
+    <!-- New Arrivals -->
     <div class="section-header">
         ✨ New Arrivals
         <span class="badge">Just In</span>
     </div>
 
     <div class="gift-grid">
-        <!-- Gift 5 -->
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/61z+y0wYfFL._AC_UL320_.jpg" alt="LED Desk Lamp" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/61z+y0wYfFL._AC_UL320_.jpg" alt="LED Desk Lamp" loading="lazy" />
             </div>
             <div class="gift-info">
-                <div class="gift-name">Touch Control LED Desk Lamp with USB</div>
-                <div class="gift-price">₹899 <small>₹1,899</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <div class="gift-name">Touch Control LED Desk Lamp with USB Port</div>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 6 -->
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/71N7h4gHaQL._AC_UL320_.jpg" alt="Sling Bag" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/71N7h4gHaQL._AC_UL320_.jpg" alt="Sling Bag" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Waterproof Sling Bag for Men & Women</div>
-                <div class="gift-price">₹549 <small>₹1,299</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 7 -->
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/71XJ5iMx6YL._AC_UL320_.jpg" alt="Wireless Mouse" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/71XJ5iMx6YL._AC_UL320_.jpg" alt="Wireless Mouse" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Silent Wireless Mouse with USB Receiver</div>
-                <div class="gift-price">₹399 <small>₹999</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
-        <!-- Gift 8 -->
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/61tC0xZcVkL._AC_UL320_.jpg" alt="Scented Candles" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/61tC0xZcVkL._AC_UL320_.jpg" alt="Scented Candles" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Aromatherapy Scented Candles (Set of 4)</div>
-                <div class="gift-price">₹649 <small>₹1,499</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
     </div>
 
-    <!-- Additional Row: Gift Hampers -->
+    <!-- Gift Hampers -->
     <div class="section-header">
         🧺 Gift Hampers
     </div>
@@ -470,37 +431,35 @@
     <div class="gift-grid">
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/71XqHqkq4-L._AC_UL320_.jpg" alt="Chocolate Hamper" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/71XqHqkq4-L._AC_UL320_.jpg" alt="Chocolate Hamper" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Premium Chocolate Hamper (12 pcs)</div>
-                <div class="gift-price">₹1,199 <small>₹2,499</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
 
         <div class="gift-card">
             <div class="gift-img">
-                <img src="https://m.media-amazon.com/images/I/71qRbJoB4rL._AC_UL320_.jpg" alt="Spa Kit" loading="lazy">
+                <img src="https://m.media-amazon.com/images/I/71qRbJoB4rL._AC_UL320_.jpg" alt="Spa Kit" loading="lazy" />
             </div>
             <div class="gift-info">
                 <div class="gift-name">Luxury Spa & Self-Care Kit</div>
-                <div class="gift-price">₹1,499 <small>₹3,299</small></div>
-                <a href="claim.html" class="claim-gift-btn">Claim Deal</a>
+                <a href="claim.html" class="claim-gift-btn">Claim Gift</a>
             </div>
         </div>
     </div>
 
-    <!-- bottom CTA -->
+    <!-- Bottom CTA -->
     <div style="margin: 30px 0 16px;">
         <a href="claim.html" class="claim-btn" style="background: #FF9900; border-radius: 30px; padding: 14px; text-align: center; font-weight: 700; display: block; text-decoration: none; color: #111; box-shadow: 0 4px 10px rgba(255,153,0,0.3);">
-            🚀 Claim All Offers
+            🚀 Claim All Gifts
         </a>
     </div>
 
-    <!-- Footer / Disclaimer -->
+    <!-- Footer -->
     <div class="disclaimer">
-        <p>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.<br>
+        <p>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.<br />
         This is a demo page for gift claims. <a href="claim.html">Claim your gift →</a></p>
         <p style="margin-top: 8px;">© 2026 Amazon Gifts · All rights reserved.</p>
     </div>
